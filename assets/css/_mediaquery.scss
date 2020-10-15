@@ -1,0 +1,397 @@
+// Ipad Pro
+@media (max-width: 1024px) {
+	.col-md-6{
+		flex: 0 0 70%;
+		max-width: 70%;
+	}
+
+	.game-content{
+		padding-top: 5rem;
+	}
+
+	// Find PM Styles
+	.findpm{
+		.findpm-header{
+			height: 100%;
+
+			.header--left{
+				img{
+					width: 15%;
+				}
+			}
+		}
+	}
+
+	// Word Search Style
+	// .wordsearch{
+	// 	h3{}
+	// }
+
+	// Progressbar
+	#preloader{
+		img{
+			padding-bottom: 0;
+		}
+	}
+
+	// Find PM Assets
+	.findpm--step-1, 
+	.findpm--step-2{
+		width: 70%;
+	}
+}
+
+@media (max-width: 768px) {
+	.col-md-6{
+		flex: none;
+		max-width: none;
+	}
+
+	.game-content{
+		padding-top: 4rem;
+
+		&--body{
+			width: 100%;
+
+			.content-body--middle{
+				p{
+					padding: 0 20px;
+				}
+			}
+
+			.congrats-contents{
+				img{
+		           width: 60px;
+		        }
+			}
+
+			.tryagain-contents{
+				.img-tryagain{
+			        width: 50px;
+			        margin: 20px 0;
+			     }
+			}
+		}
+	}
+
+	// Find PM Assets
+	.findpm--step-1,
+	.findpm--step-2{
+		width: 60%;
+	}
+
+	.iconto-find{
+		width: 30%;
+	}
+}
+
+// Iphone 6/7/8 Plus
+@media (max-width: 414px) {
+	.game-content{
+		padding-top: 2.5rem;
+
+		&--heading{
+			h2{
+				font-size: 20px;
+			}
+
+			p{
+				font-size: 14px;
+			}
+		}
+
+		&--body{
+
+			.content-body--middle{
+				h3{
+					font-size: 15px;
+				}
+
+				p{
+					font-size: 12px;
+				}
+
+				.findpm-icons{
+					p{
+						font-size: 12px;
+					}
+				}
+			}
+
+			.content-body--footer{
+				.btn-block{
+					padding: 8px 0;
+				}
+
+				p{
+					font-size: 10px;
+				}
+			}
+
+			&.content-countdown{
+				h2{
+					font-size: 100px;
+
+					&.start{
+						font-size: 70px;
+					}
+				}
+
+				h4{
+					font-size: 20px;
+				}
+
+				.btn-default{
+			        &:nth-of-type(1){
+			          margin-bottom: 10px;
+			          margin-top: 20px;
+			        }
+
+			        &.btn-last{
+			          margin-bottom: 10px;
+			        }
+			    }
+			}
+
+			.congrats-contents{
+				margin-left: 5%;
+				margin-right: 5%;
+
+				h2{
+					margin-bottom: 10px;
+					font-size: 30px;
+				}
+
+				.btn-default{
+		          &:nth-of-type(1){
+		            margin-bottom: 10px;
+		            margin-top: 15px;
+		          }
+
+		          &.btn-last{
+		            margin-bottom: 10px;
+		          }
+		        }
+			}
+
+			.tryagain-contents,
+    		.endgame-contents{
+    			margin-left: 5%;
+      			margin-right: 5%;
+      			padding: 10px 20px;
+
+      			h3{
+      				font-size: 18px;
+      				margin-top: 50px;
+      			}
+
+      			p{
+      				margin-top: 10px;
+      				font-size: 14px;
+      			}
+
+      			.btn-default{
+		        &:nth-of-type(1){
+		          margin-bottom: 10px;
+		        }
+
+		        &.btn-last{
+		          margin-bottom: 30px;
+		        }
+		      }
+    		}
+		}
+	}
+
+	// Find PM Style
+	.findpm{
+		.findpm-header{
+			.header--left{
+				img{
+					width: 30%;
+					margin-top: -11px;
+					margin-left: 0;
+				}
+
+				p{
+					font-size: 16px;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+
+	// Buttons
+	.btn-default{
+		font-size: 12px;
+	}
+
+	.btn-default-round{
+		font-size: 14px;
+    	width: auto;
+    	padding: 4px 11px;
+	}
+
+	.btn-volume{
+		top: -13px;
+	}
+
+	// Progressbar
+	#preloader{
+		img{
+			width: 80px;
+		}
+	}
+
+	// Find PM Assets
+	.iconto-find{
+		width: 50%;
+	}
+
+	.findpm--step-1,
+	.findpm--step-2{
+		width: 70%;
+	}
+}
+
+// Iphone 6/7/8
+@media (max-width: 375px) {
+	.game-content{
+		padding-top: 2rem;
+	}
+	// Find PM Assets
+	.iconto-find{
+		width: 45%;
+	}
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) {
+	.game-content{
+		padding-top: 3rem;
+	}
+}
+
+// Iphone 5
+@media (max-width: 320px) {
+	.game-content{
+		&--heading{
+			h2{
+				font-size: 19px;
+			}
+
+			p{
+				font-size: 12px;
+
+				img{
+					width: 10px;
+				}
+			}
+		}
+		&--body{
+
+			.content-body--middle{
+
+				p{
+					margin-top: 0;
+				}
+			}
+
+			.content-body--footer{
+				.btn-block{
+					padding: 5px 0;
+				}
+			}
+
+			.congrats-contents{
+
+				img{
+					width: 35px;
+				}
+
+				h2{
+					margin-bottom: 10px;
+					font-size: 20px;
+				}
+
+				h4{
+					font-size: 15px;
+				}
+			}
+		}
+	}
+
+	// Find PM Styles
+	.findpm{
+		.findpm-header{
+			.header--left{
+				img{
+					width: 24%;
+					margin-top: -3px;
+					margin-left: 0;
+				}
+
+				p{
+					font-size: 10px;
+					margin-bottom: 10px;
+				}
+
+				.image-count{
+					font-size: 12px;
+				}
+			}
+
+			.header--right{
+				.timer-badge {
+					padding: 10px 10px;
+				    width: 60px;
+				    height: 60px;
+
+					h4{
+						font-size: 15px;
+					}
+				}
+
+				.btn-close{
+					margin-left: 10px;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+
+	// Buttons
+	.wifi-message{
+		p{
+			font-size: 10px;
+		}
+	}
+
+	.btn-wifi{
+		font-size: 5px;
+		width: auto;
+		padding: 1px 3px;
+	}
+
+	.btn-volume{
+		top: -15px;
+	}
+
+	.btn-default{
+		font-size: 12px;
+	}
+
+	// Progressbar
+	#preloader{
+		img{
+			width: 60px;
+		}
+	}
+
+	// Find PM Assets
+	.iconto-find{
+		margin-bottom: 0;
+	}
+
+}
+
+

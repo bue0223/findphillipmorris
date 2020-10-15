@@ -1,0 +1,77 @@
+//color
+$black: #000000;
+$gray: #A69E97;
+$red: #ca151a;
+$gold: #a4740e;
+
+//font-size
+$xlarge:      28px;
+$medium:      20px;
+$regular:     16px;
+$small:       14px;
+$xsmall:      12px;
+$xxsmall:     11px;
+
+$fontfamily: 'Futura Bk', sans-serif;
+$iconfamily: 'Source Sans Pro', 'Font Awesome 5 Free', sans-serif;;
+
+@font-face {
+    font-family: 'PM_Bodoni';
+    src: url('../../assets/fonts/PM_Bodoni-Bold.eot');
+    src: url('../../assets/fonts/PM_Bodoni-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/PM_Bodoni-Bold.woff2') format('woff2'),
+        url('../../assets/fonts/PM_Bodoni-Bold.woff') format('woff'),
+        url('../../assets/fonts/PM_Bodoni-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Bk';
+    src: url('../../assets/fonts/Futura-Book.eot');
+    src: url('../../assets/fonts/Futura-Book.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/Futura-Book.woff2') format('woff2'),
+        url('../../assets/fonts/Futura-Book.woff') format('woff'),
+        url('../../assets/fonts/Futura-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PM_Futuris';
+    src: url('../../assets/fonts/PM_Futuris-Bold.eot');
+    src: url('../../assets/fonts/PM_Futuris-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/PM_Futuris-Bold.woff2') format('woff2'),
+        url('../../assets/fonts/PM_Futuris-Bold.woff') format('woff'),
+        url('../../assets/fonts/PM_Futuris-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PM_Futuris';
+    src: url('../../assets/fonts/PM_Futuris-Medium.eot');
+    src: url('../../assets/fonts/PM_Futuris-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/PM_Futuris-Medium.woff2') format('woff2'),
+        url('../../assets/fonts/PM_Futuris-Medium.woff') format('woff'),
+        url('../../assets/fonts/PM_Futuris-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PM_Futuris';
+    src: url('../../assets/fonts/PM_Futuris-Light.eot');
+    src: url('../../assets/fonts/PM_Futuris-Light.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/PM_Futuris-Light.woff2') format('woff2'),
+        url('../../assets/fonts/PM_Futuris-Light.woff') format('woff'),
+        url('../../assets/fonts/PM_Futuris-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

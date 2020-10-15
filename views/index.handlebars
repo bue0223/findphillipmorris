@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no,width=device-width,height=device-height"> 
+    <meta property="og:title" content="PhilipMorris.PH | Games">
+	<meta property="og:description" content="PMFTC Kitapp">
+	<meta property="og:image" content="/image/brand-logo.png">
+	<meta property="og:url" content="http://pmftc-games.com/">
+	<link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>PhilipMorris.PH | Games</title>
+
+    <style type="text/css">
+    	.container{
+    		height: 100vh;
+    	}
+
+    	.title{
+    		text-align: center;
+    		margin-bottom: 20px;
+    	}
+
+    	.title img{
+    		width: 28px;
+    	}
+
+    	.homepage .col-md-6{
+    		padding: 0;
+    	}
+
+    	.div-content{
+    		box-shadow: 0px 1px 3px #00000029;
+    		background: #F6F6F6 0% 0% no-repeat padding-box;
+    		margin: 10px;
+    	}
+
+    	.div--footer{
+    		padding: 10px 20px;
+    	}
+
+    	.btn-default{
+    		margin-top: 10px;
+    	}
+
+    	.coin{
+    		width: 17px;
+    		padding-bottom: 3px;
+    	}
+
+    	h5{
+    		margin-bottom: 5px;
+    	}
+
+    	p{
+    		margin-bottom: 0;
+    	}
+
+    	.findpm--step-1{
+    		width: 100%
+    	}
+
+    	@media (max-width: 1024px) {
+    		.homepage .col-md-6{
+    			width: 50%;
+    			flex: none;
+    		}
+    	}
+
+    	@media (max-width: 414px) {
+    		h5{
+    			font-size: 14px;
+    		}
+    	}
+
+    </style>
+
+  </head>
+ <body class="homepage">
+	<div id="landscape"><div>"Rotate Device to Portrait"</div></div>
+ 	<main>
+		<div class="container d-flex align-items-center">
+			<div class="row">
+				<div class="col-md-12 title">
+					 <h1> <img src="/image/bg-loading.png"> PM Digital Games</h1>
+				</div>
+				<div class="col-md-6 align-self-center">
+					<div class="div-content">
+						<img src="/image/findpm-assets/img_step1.png" class="findpm--step-1">
+					<div class="div--footer">
+						<h5>FIND PHILIP MORRIS</h5>
+						<p>Play now</p>
+						<a class="btn btn-default btn-block" href="/home">EARN <img src="/image/icon_pmcoin.png" class="coin"> 50</a>
+					</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 align-self-center">
+					<div class="div-content">
+						<img src="/image/img_step1.jpg" class="findpm--step-1">
+					<div class="div--footer">
+						<h5>WORD SEARCH</h5>
+						<p>Play now</p>
+						<a class="btn btn-default btn-block" href="https://wordsearch.pmftc-games.com/home">EARN <img src="/image/icon_pmcoin.png" class="coin"> 50</a>
+					</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</main>
+	<script>
+		function doOnOrientationChange(){
+  switch(window.orientation) {  
+      case -90:                 
+        $('#landscape').css('display', 'block')
+        $('body').css('overflow' , 'hidden')
+        $('main').css('display', 'none')
+        break;
+      case 90:              
+        $('#landscape').css('display', 'block')
+        $('body').css('overflow' , 'hidden')
+        $('main').css('display', 'none')                 
+        break;
+      default:                   
+        $('#landscape').css('display', 'none')
+        $('body').css('overflow' , 'visible')
+        $('main').css('display', '')
+        break;                            
+  }
+}
+window.addEventListener('orientationchange', doOnOrientationChange);
+	</script>
+ </body>
+</html>

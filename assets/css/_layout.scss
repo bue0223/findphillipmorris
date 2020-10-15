@@ -1,0 +1,629 @@
+html, body {
+  	height: 100%;
+}
+
+body{
+	background-image: url("../../assets/images/bg-body.png");
+	background-color: white;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	  -moz-background-size: 100% 100%;
+	  
+	 -o-background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+	font-family: $fontfamily;
+	font-size: 1rem;
+	
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: $fontfamily;
+	color: $red;
+}
+
+.game-content{
+  padding-top: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+	
+  &--heading{
+    width: 100%;
+		
+    h2{
+			text-align: center;
+			font-family: "PM_Bodura";
+			font-weight: bold;
+			font-size: 30px;
+			margin-bottom: 0;
+		}
+
+		p{
+			text-align: center;
+			font-weight: 300;
+      font-family: 'PM_Futuris';
+
+			img{
+				width: 20px;
+				padding-bottom: 1px;
+				margin-right: 3px;
+			}
+
+			span{
+				font-weight: 800;
+				color: $gold;
+			}
+		}
+	}
+
+	&--body{
+		background-image: url("../../assets/images/bg-gamebody.png");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+    padding: 0;
+    width: auto;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &.content-between{
+      padding: 20px 0;
+      justify-content: space-between !important;
+    }
+
+    &.loading-assets{
+      background-color: white;
+      border: 1px solid $red;
+      background-image: none;
+    }
+
+    .loading-contents{
+      width: 100%;
+      margin: 0 auto;
+
+      img{
+        margin-bottom: 50px;
+      }
+    }
+    
+    &.content-countdown,
+    &.content-congrats,
+    &.content-tryagain,
+    &.content-endgame{
+      background-color: $gray;
+      background-image: none;
+      border: 1px solid $red;
+    }
+
+    &.content-countdown{
+      h2{
+        font-weight: bold;
+        font-family: "PM_Futuris";
+        font-size: 200px;
+
+        &.start{
+          font-size: 100px;
+        }
+      }
+    }
+
+    .congrats-contents{
+      box-shadow: 0px 3px 6px #000000A6;
+      background-color: white;
+      background-image: url("../../assets/images/bg-congrats.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-left: 10%;
+      margin-right: 10%;
+      padding: 20px;
+
+        img{
+            width: 100px;
+            margin: 10px 0;
+        }
+
+        h2{
+          margin-top: 10px;
+          font-weight: bold;
+          font-family: "PM_Futuris";
+          margin-bottom: 30px;
+        }
+
+        h4{
+          color: $gold;
+          font-weight: bold;
+          font-family: "PM_Futuris";
+        }
+
+        .btn-default{
+          &:nth-of-type(1){
+            margin-bottom: 20px;
+            margin-top: 30px;
+          }
+
+          &.btn-last{
+            margin-bottom: 20px;
+          }
+        }
+    }
+
+    .tryagain-contents,
+    .endgame-contents{
+      box-shadow: 0px 3px 6px #000000A6;
+      background-color: white;
+      padding: 20px 30px;
+      margin-left: 10%;
+      margin-right: 10%;
+      
+      h3{
+        margin-top: 80px;
+        font-weight: bold;
+        font-family: "PM_Futuris";
+      }
+
+      p{
+        color: $gold;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 18px;
+      }
+
+      .img-tryagain{
+        width: 80px;
+        margin: 30px 0;
+      }
+
+      .btn-default{
+        &:nth-of-type(1){
+          margin-bottom: 20px;
+        }
+
+        &.btn-last{
+          margin-bottom: 50px;
+        }
+      }
+    }
+
+    .content-body--top{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15px;
+    }
+
+    .content-body--middle{
+      h3{
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+        margin-top: 30px;
+      }
+
+      p{
+        color: white;
+        font-weight: 600;
+        margin-top: 20px;
+
+      }
+
+      .findpm-icons{
+        p{
+         
+          margin-bottom: 30px;
+          font-size: 14px;
+        }
+
+        .coin{
+          width: 19px;
+          padding-bottom: 5px;
+        }
+      }
+    }
+
+    .content-body--footer{
+      .btn-block{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        padding: 10px 0;
+      }
+
+      p{
+        font-weight: bold;
+        font-size: 12px;
+        color: white;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+	}
+}
+
+  // Find PM Gameplay
+  .findpm{
+    padding: 0 !important;
+    justify-content: flex-start !important;
+
+    .findpm-header{
+      justify-content: space-between !important;
+
+    .header--left{
+      width: 100%;
+      margin: auto;
+      padding: 10px 0;
+
+      p{
+        font-size: 20px;
+        color: white;
+        margin-bottom: 5px;
+      }
+
+      .image-count{
+        background-color: #842a1d;
+        border: 1px solid #662511;
+        border-radius: 20px;
+        padding: 5px 15px;
+        color: white;
+        font-size: 23px;
+      }
+
+      img{
+        margin-left: 20px;
+        width: 20%;
+      }
+    }
+
+    .header--right{
+      display: flex;
+
+        .timer-bg{
+          background: transparent
+          linear-gradient(180deg, #570b0e 0%, #ad161b 50%, #570b0e 100%) 0% 0%
+          no-repeat padding-box;
+          border: 1px solid #a4740e;
+          padding: 0 10px;
+          display: flex;
+          align-items: center;
+        }
+
+        .timer-badge{
+          background-color: #842a1d;
+          border: 1px solid #662511;
+          color: white;
+          border-radius: 50px;
+          padding: 10px 20px;
+          border: 1px solid #a4740e;
+          width: 75px;
+          height: 75px;
+          text-align: center;
+          margin: 0 auto;
+
+          h4{
+            margin-bottom: 0;
+            font-size: 27px;
+            color: white;
+            font-weight: bold;
+          }
+
+         p{
+            font-size: 11px;
+            margin-bottom: 0;
+          }
+        }
+
+        .btn-close{
+          height: fit-content;
+          margin-left: 20px;
+          margin-top: 20px;
+        }
+     }
+    }
+
+    .findpm-body{
+      margin: 0 10px;
+
+      .icon-find{
+          width: 100%;
+        }
+    }
+
+    .findpm-footer{
+      color: white;
+      height: 100%;
+      padding-top: 10px;
+
+      &.find-footer-wbg{
+        background: transparent url("../../assets/images/findpm-assets/bg-spark.png") 0% 0% no-repeat padding-box;
+        mix-blend-mode: screen;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      h5{
+        color: white;
+        font-weight: bold;
+        font-family: 'PM_Futuris';
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // Word Search Style
+  .wordsearch{
+    justify-content: flex-start !important;
+    padding: 15px 0 0 0;
+
+    h6{
+      margin-top: 10px;
+      color: white;
+    }
+
+    .table{
+      color: white;
+      margin-top: 10px;
+      text-align: left;
+
+      td{
+        border: 0;
+        padding: 0;
+
+        img{
+          width: 20px;
+          margin-left: 18%;
+          margin-bottom: 5px;
+          margin-right: 2px;
+        }
+      }
+    }
+
+    .btn-close{
+      position: absolute;
+      right: 34px;
+    }
+
+    .wordsearch-body{
+      background-color: #F0F0F0;
+      border: 1px solid $gold;
+      height: 100vh;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+
+      .wordsearch-letters{
+        padding: 15px;
+
+        img{
+          width: 100%;
+        }
+      }
+
+      .btn-default{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .ws-h3{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  // Buttons
+  .btn-default{
+    background-color: #ca151a;
+    background-image: url("../../assets/images/bg-button.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0;
+    color: white;
+    font-weight: bold;
+    font-family: 'PM_Futuris';
+    padding: 8px 0;
+    font-size: 14px;
+  }
+
+  .btn-default-round{
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    background-color: $red;
+    box-shadow: 0px 3px 6px #00000040;
+  }
+
+  .btn-single{
+    margin-bottom: 50px !important;
+  }
+
+  .btn-play{
+    margin-top: 50px !important;
+  }
+
+  .btn:hover,
+  .btn:active
+  .btn.active{
+    color: white;
+  }
+
+  .btn:focus,
+  .btn:active:focus,
+  .btn:focus{
+    outline: none;
+    box-shadow: none;
+  }
+
+  .btn-wifi{
+    background-color: $red;
+    font-size: 10px;
+    color: white;
+    border-radius: 50%;
+    padding: 1px 6px; 
+    position: absolute;
+    margin-left: 2px;
+  }
+
+  .btn-animate{
+    animation: beat .35s infinite alternate;
+    transform-origin: center;
+    box-shadow: 0px 3px 6px #00000040;
+  }
+
+  @keyframes beat{
+    to { transform: scale(1.06); }
+  }
+
+  .wifi-message{
+    display: none;
+    
+    .wifi-content{
+      position: fixed;
+      z-index: 99;
+      right: 0;
+      top: 50px;
+      display: flex;
+      align-items: center;
+      background-color: $red;
+      box-shadow: 0px 3px 6px #00000091;
+      opacity: 0.9;
+      color: white;
+      padding-left: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top-left-radius: 45px;
+      border-bottom-left-radius: 45px;
+    }
+
+    img{
+      width: 40px;
+    }
+
+    p{
+      font-family: 'PM_Futuris';
+      font-weight: 100;
+      font-size: 12px;
+      margin-bottom: 0;
+      padding-left: 15px;
+      padding-right: 5px;
+    }
+
+    .btn-close{
+      background-color: transparent;
+      color: white;
+    }
+  }
+
+  .btn-volume{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    top: -5px;
+    color: #6b6b6b;
+
+    &:focus, &:hover, &:active{
+      color: $red;
+      background-color: transparent;
+    }
+
+     .fa-volume-up{
+      color: $red;
+    }
+  }
+
+   // Progresbar
+  #preloader{
+    background-color: white;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    height: -webkit-fill-available;;
+    overflow: hidden;
+
+    img{
+      position: absolute;
+      top: 37%;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+      padding-bottom: 40px;
+      width: 7%;
+    }
+  }
+
+  .pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    z-index: 2000;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    width: 200px;
+    background: $gray;
+    overflow: hidden;
+  }
+
+  .pace .pace-progress {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    max-width: 200px;
+    position: fixed;
+    z-index: 2000;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    height: 100%;
+    width: 100%;
+    background: $red;
+  }
+
+  .pace.pace-inactive {
+    display: none;
+  }
+
+  #step-2,
+  #step-2-end,
+  #step-3,
+  #step-3-end,
+  #step-4,
+  #step-4-end,
+  #step-5,
+  #step-5-end,
+  #step-6,
+  #step-7 {
+    display: none;
+  }
+
+  // Find PM Assets
+  .findpm--step-1,
+  .findpm--step-2{ 
+    width: 80%;
+  }
+
+  .iconto-find{
+    margin-bottom: 20px;
+    width: 50%;
+  }
+
+ 
