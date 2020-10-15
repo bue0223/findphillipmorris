@@ -155,60 +155,50 @@ $(document).ready(function () {
             console.log('Env', env)
             let authData;
             let paramGetToken;
-            // authData = await fetch(env.data.authApi, {
-            // credentials: 'include',
-            // method : 'GET',
-            // headers: {
-            //     'Accept': 'application/json',
-            //     'Content-Type': 'application/json',
-            // },
-            // })
-            // .then(res => res.json())
-            // .then(data => authData = data)
-            // .then(async function(){
-            //     console.log(authData)
-            //     if(authData.message == 'Unauthenticated.'){
-            //         alert('User unauthenticated')
-            //     }
-            //     else{
-            //         paramGetToken = {
-            //             grant_type: "password",
-            //             client_id: env.data.client_id,
-            //             client_secret: env.data.client_secret,
-            //             username: env.data.username,
-            //             password: env.data.password,
-            //             scope: ""
-            //         }
-            //         let addRewardsParams = {
-            //             game_reference_id: "16",
-            //             amount: "50",
-            //             spice_person_id: authData.data.spice_person_id
-            //         }
-            //         let params = {
-            //             addRewardsParams : addRewardsParams,
-            //             getTokenParams : paramGetToken
-            //         }
-            //         console.log(addRewardsParams)
-            //         let addRewards = await axios.post(env.data.addRewardApi, params);
-            //         console.log('Add rewards response :', addRewards)
-            //         if(addRewards.data.message == 'Success'){
-            //             hasWon = true;
-            //             $(".btn-playgame-home").show();
-            //             $(".popup-won").show();
-            //             $(".popup-won").css("display", "flex");
-            //             $("#coin").text(` ${parseInt($("#coin").text()) + 50}`);
-            //             clearInterval(intervals);
-            //             setTimeout(() => {
-            //               $(".popup-won").hide();
-            //               window.location.href = `/`;
-            //             }, 10000);
-            //         }
-            //     }
-            // })
-            hasWon = true;
-            $('#step-5').css('display', 'none')
-            $('#step-6').css('display', 'flex')
-            clearInterval(intervals);
+            authData = await fetch(env.data.authApi, {
+            credentials: 'include',
+            method : 'GET',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            })
+            .then(res => res.json())
+            .then(data => authData = data)
+            .then(async function(){
+                console.log(authData)
+                if(authData.message == 'Unauthenticated.'){
+                    alert('User unauthenticated')
+                }
+                else{
+                    paramGetToken = {
+                        grant_type: "password",
+                        client_id: env.data.client_id,
+                        client_secret: env.data.client_secret,
+                        username: env.data.username,
+                        password: env.data.password,
+                        scope: ""
+                    }
+                    let addRewardsParams = {
+                        game_reference_id: "16",
+                        amount: "50",
+                        spice_person_id: authData.data.spice_person_id
+                    }
+                    let params = {
+                        addRewardsParams : addRewardsParams,
+                        getTokenParams : paramGetToken
+                    }
+                    console.log(addRewardsParams)
+                    let addRewards = await axios.post(env.data.addRewardApi, params);
+                    console.log('Add rewards response :', addRewards)
+                    if(addRewards.data.message == 'Success'){
+                        hasWon = true;
+                        $('#step-5').css('display', 'none')
+                        $('#step-6').css('display', 'flex')
+                        clearInterval(intervals);
+                    }
+                }
+            })
           } 
         } catch (err) {
           console.log(err);
