@@ -22,5 +22,5 @@ router.use((req, res, next) => {
 const pages = require('../controllers/pages.js');
 router.get('/:page', pages.pages);
 const index = require('../controllers/index.js');
-router.get('/', index.index);
+router.get('/', pages.pages);
 module.exports = router;
