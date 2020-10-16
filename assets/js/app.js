@@ -302,18 +302,18 @@ if(localStorage.getItem('before_path') !== null){
   if(beforePath.trim().split("&")[0] == '/countdown' && pathname.trim().split("&")[0] == '/countdown'){
     if(beforePath.trim().split("&") !== pathname.trim().split("&")){
       localStorage.removeItem('before_path')
-      window.location.href = '/'
+      window.location.href = 'https://philipmorris.ph/home'
     }
   }
   if(pathname != '/' && pathname != '/step&step=3' && pathname != '/home'){
     console.log('trace')
     localStorage.removeItem('before_path')
-    window.location.href = '/'
+    window.location.href = 'https://philipmorris.ph/home'
   }
   else if(pathname == '/step&step=3' && beforePath == '/step&step=3'){
     console.log('trace')
     localStorage.removeItem('before_path')
-    window.location.href = '/'
+    window.location.href = 'https://philipmorris.ph/home'
   }
 }
 
