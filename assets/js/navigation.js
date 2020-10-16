@@ -330,9 +330,13 @@ function showGameImage(icon, week){
 }
 window.goIndex = function(){
   $('.modal').modal('hide');
-  window.location.href = '/'
+  window.location.href = 'https://philipmorris.ph/home'
 }
 window.goHome = function(){
   $('.modal').modal('hide');
   window.location.href = '/home'
+}
+window.goSpendCoins = function(){
+  $('.modal').modal('hide');
+  window.location.href = 'https://philipmorris.ph/play-spin-wheel'
 }
