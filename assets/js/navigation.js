@@ -126,6 +126,7 @@ function showGameContent(){
     Pace.start();
   }
   switch(path) {
+    case '/':
     case '/home':
       console.log('trace')
       $('#home-game-content').css('display', '')
