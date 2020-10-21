@@ -118,11 +118,12 @@ $(document).ready(function () {
       if (!foundIds.includes($(this).attr("id"))) {
         foundIds.push($(this).attr("id"));
         iconFoundSfx.currentTime = 1.5
+        iconFoundSfx.muted = false;
         iconFoundSfx.play();
-        // iconFoundSfx.muted = false;
-        // setTimeout(() => {
-        //   iconFoundSfx.muted = true;
-        // }, 1000);
+        console.log(iconFoundSfx.muted)
+        setTimeout(() => {
+          iconFoundSfx.pause();
+        }, 4000);
       }
       $(".image-count").text(`${foundIds.length}/${toFindCount}`);
       if (foundIds.length == toFindCount) {
@@ -212,8 +213,14 @@ $(document).ready(function () {
     console.log($(this).attr('class'))
     console.log(window.location.pathname.split('&')[0])
     if(window.location.pathname.split('&')[0] == '/countdown' && parseInt(counters = $("#second_timer").text().trim()) <= 44 && !$(this).hasClass('btn') && $('#step-5').css('display') != 'none'){ 
-        wrongIconSfx.currentTime = 1.5
-        wrongIconSfx.play();
+      wrongIconSfx.currentTime = 1.5
+      wrongIconSfx.muted = false;
+      wrongIconSfx.play();
+      setTimeout(() => {
+        wrongIconSfx.pause();
+      }, 4000);  
+      // wrongIconSfx.currentTime = 1.5
+        // wrongIconSfx.play();
         // setTimeout(() => {
         //   wrongIconSfx.muted = true;
         // }, 1000); 
