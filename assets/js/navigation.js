@@ -65,12 +65,12 @@ $(document).ready(function () {
     $('#go-to-game').on('click', function(){
       countdown_sfx.muted = true;
       countdown_sfx.play();
-      // wrongIconSfx.muted = true;
-      // wrongIconSfx.loop = true;
-      // wrongIconSfx.play();
-      // iconFoundSfx.muted = true;
-      // iconFoundSfx.loop = true;
-      // iconFoundSfx.play();
+      wrongIconSfx.muted = true;
+      wrongIconSfx.loop = true;
+      wrongIconSfx.play();
+      iconFoundSfx.muted = true;
+      iconFoundSfx.loop = true;
+      iconFoundSfx.play();
       won_sfx.muted = true;
       won_sfx.loop = true;
       won_sfx.play();
